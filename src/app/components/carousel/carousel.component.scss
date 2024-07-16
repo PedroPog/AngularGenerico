@@ -1,0 +1,8 @@
+.custom-carousel-height {
+  height: 50vh; /* Defina a altura desejada aqui */
+}
+
+.custom-carousel-height .carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,22 @@
+<section>
+  <Span>Login</Span>
+  <Form [formGroup]="loginForms" (submit)="onSubmit()">
+    <div class="input-forms">
+      <label for="login">Login</label>
+      <input type="text" id="login" maxlength="20" formControlName="login">
+      @if(loginForms.get('login')?.hasError('required')&&
+      loginForms.get('login')?.touched){
+        <div class="form-text text-danger fw-bold">Login Obrigatorio!</div>
+      }
+    </div>
+    <div class="input-forms password-field">
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" minlength="6" maxlength="6" formControlName="senha">
+      @if(loginForms.get('senha')?.hasError('required')&&
+      loginForms.get('senha')?.touched){
+        <div class="form-text text-danger fw-bold">Senha Obrigatorio!</div>
+      }
+    </div>
+    <button type="submit">Login</button>
+  </Form>
+</section>

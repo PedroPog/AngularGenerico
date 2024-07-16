@@ -1,0 +1,78 @@
+:host{
+  display: flex;
+  justify-content: center;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: 6%;
+}
+
+section span {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-forms {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.input-forms label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-forms input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(100% - 22px); /* Ajuste para a largura do padding e borda */
+}
+
+.input-forms mat-icon {
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 12px); /* Ajuste para centralizar verticalmente */
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.password-field {
+  position: relative;
+}
+
+.password-field mat-icon {
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 12px); /* Ajuste para centralizar verticalmente */
+  cursor: pointer;
+}
