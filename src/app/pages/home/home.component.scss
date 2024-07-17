@@ -1,11 +1,26 @@
-
+section{
+  width: inherit;
+  min-height: 100vh;
+}
 .categorias-icons{
   background-color: rgba(255, 0, 0, 0.548);
   width: inherit;
-  height: 15vh;
+  height: 32vh;
   margin: 2% 1%;
+  padding: 10px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: auto;
+  gap: 5%;
+  justify-content: center;
+  &::-webkit-scrollbar{
+    display: none;
+  }
 }
-section{
-  width: inherit;
-  height: 100vh;
+.categorias{
+  background-color: aquamarine;
+  height: 100%;
+  width: 13vw;
 }
+
